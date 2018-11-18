@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestAll">
+    <listeners>
+        <listener class-name="com.justin.listener.MyListener"></listener>
+        <listener class-name="com.justin.listener.ReRun"></listener>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+    </listeners>
+
+    <test name="database1">
+        <classes>
+            <class name="com.justin.appium.First" />
+            <class name="com.justin.appium.Second" />
+        </classes>
+    </test>
+
+</suite>
